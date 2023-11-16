@@ -1,0 +1,330 @@
+:root {
+    --site-color-blue-00: #5f3ffc;
+    --site-color-blue-01: #4a26d0;
+
+
+    --site-color-01-hover: #5c3a08;
+    --site-color-02: #1a253a;
+
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+body {
+    background-color: #fff;
+    font-family: 'HankenGrotesk';
+
+}
+
+.link {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.inner-card{
+    height: 590px;
+    width: 840px;
+    background-color: #fff;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-card {
+    height: 530px;
+    width: 410px;
+    background: var(--site-color-blue-00);
+    border-radius: 30px;
+    padding: 20px;
+    z-index: 2;
+    position: absolute;
+    left:265px;
+}
+
+.right-card {
+    height: 530px;
+    width: 410px;
+    background: #fff;
+    padding: 2rem 4rem;
+    border: 2px solid #fff;
+    border-radius: 0px 3rem 3rem 0px;
+    box-shadow: 1px 1px 1px 1px #f5f8ff; 
+    position: absolute;
+    right: 290px;
+    z-index: 1;
+}
+
+.result {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 2.4rem 0;
+}
+
+.top-card-score {
+    background: radial-gradient(#4a24cc, #4633ed);
+    height: 220px;
+    width: 220px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.grade {
+    font-weight: bold;
+    color: #fff;
+    font-size: 4rem;
+    padding-top: 3rem;
+}
+
+
+.total {
+    color: #8d83fd
+}
+
+.comment{
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bolder;
+        font-size: 2rem;
+}
+
+.message{
+        color: #fff;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 10px 4.5rem;
+}
+
+
+.summary {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.reaction {
+    background-color: #fff6f5;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.memory {
+    background-color: #fffbf2;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.verbal {
+    background-color: #f2fbfa;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.visual {
+    background-color: #f3f3fd;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.icons {
+    padding-right: 1rem;
+}
+
+.content {
+    height: 2.5rem;
+    width: 8rem;
+    padding: 8px;
+}
+
+.summary-score {
+    text-align: end;
+    padding: 8px;
+}
+
+
+.bold-sp {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+.cont-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 0.8rem 5rem;
+    display: flex;
+    margin: 3rem auto;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-bottom: 2rem;
+    }
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    }
+
+
+@media only screen and (max-width: 600px) {
+
+    /* body {
+        background-color: blueviolet;
+    } */
+    
+    .inner-card{
+        height: 100%;
+        width: 100%;
+        margin: 0rem 0rem;
+        display: block;
+        background-color: #fff;
+    }
+    
+    .left-card {
+        height: 300px;
+        width: 300px;
+        margin: 0px auto;
+        position: static;
+        left:0px;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+
+    
+    .right-card {
+        height: 300px;
+        width: 300px;
+        margin: 15px auto;
+        background: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none; 
+        position: static;
+        right: 0px;
+    }
+    
+    .result {
+        margin-top: 0px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .top-card-score {
+        height: 100px;
+        width: 100px;
+        padding: 0px;
+        margin-bottom: 1rem;
+    }
+    
+    .grade {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+    
+    
+    .total {
+        color: #8d83fd
+    }
+    
+    .comment{
+            margin-top: 0.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+    }
+    
+    .message{
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            padding: 3px 0.5rem;
+    }
+    
+
+    .summary {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    
+    .reaction {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .memory {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .verbal {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .visual {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .icons {
+        padding-right: 1rem;
+    }
+    
+    .content {
+        height: 0.5rem;
+        width: 6.0rem;
+        padding: 4px;
+    }
+    
+    .summary-score {
+        text-align: end;
+        padding: 4px;
+    }
+    
+    .bold-sp {
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    
+    
+    .cont-btn {
+        padding: 0.4rem 5rem;
+        display: flex;
+        margin: 1rem auto;
+    }
+    
+    .attribution {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        }
+    
+    
+}
